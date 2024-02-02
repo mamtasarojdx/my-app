@@ -5,7 +5,7 @@ const FetchData = () => {
     useEffect(() =>{
         fetch("https://jsonplaceholder.typicode.com/posts")
         .then(response=>response.json())
-        .then(data=>data(setData))
+        .then(data=>setData(data))
         // .then(res=>console.log(data))
         .catch(error=>console.log(error))
      })
